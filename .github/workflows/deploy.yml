@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
-            cd /home/azureuser/express-api
+            cd /opt/express-api
             git pull origin main
             npm install
             pm2 restart express-api
